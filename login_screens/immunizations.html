@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/custom.css">
+	<title>Immunizations</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="text-center">
+			<a href="#"><img src="../assets/images/full-logo.jpg" alt="Agrin Health"></a>
+		</header>
+		<div class="row rowPushDown">
+			<div class="form-group progressBarWrap">
+				<div class="row flexRow">
+					<div class="col-md-1 col-sm-1 col-xs-1 fractionWrap">
+						<label style="margin-top: 5px"><strong>7/10</strong></label>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<div class="progress">
+							<div class="progress-bar progressBarCustom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="health_events.html" class="btn skip-btn active">Finish Later
+							<i class="fa fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h2 class="loginScreenTitle form-group">Immunizations</h2>
+			<p class="text-center">{dev note: this page has conditional requirements}</p>
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<form>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-xs-8">
+								<label>Vaccine:</label>
+								<input class="form-control bg-grey customHeight" placeholder="Enter vaccine name">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<label>Date Given:</label>
+								<input class="form-control bg-grey customHeight" placeholder="MM/DD/YYYY">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12 form-groupBreak">
+								<label>Administered by:</label>
+								<input class="form-control bg-grey customHeight" placeholder="Enter name">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<label>Next Dose Date:</label>
+								<input class="form-control bg-grey customHeight" placeholder="MM/DD/YYYY">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<label>Reaction:</label>
+								<select class="form-control bg-grey customHeight">
+									<option value="" disabled selected>Enter reaction</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group"> <!--NO ROW TEST-->
+						<label>Comments:</label>
+						<textarea class="form-control bg-grey customTextArea"></textarea>
+					</div>
+					
+					<div class="form-group">
+						<div class="row">
+							<div class="col-lg-12 addPlus">
+								<a href="" class=""><strong>+ Add another immunization</strong></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<a href="allergy.html" class="btn btn-block btn-blue customHeight">Prev</a>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<a href="health_events.html" class="btn btn-block btn-green customHeight">Next</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+		</div>
+	</div>
+</body>
+</html>

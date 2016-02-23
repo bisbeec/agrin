@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/custom.css">
+	<title>Allergies</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="text-center">
+			<a href="#"><img src="../assets/images/full-logo.jpg" alt="Agrin Health"></a>
+		</header>
+		<div class="row rowPushDown">
+			<div class="form-group progressBarWrap">
+				<div class="row flexRow">
+					<div class="col-md-1 col-sm-1 col-xs-1 fractionWrap">
+						<label style="margin-top: 5px"><strong>6/10</strong></label>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<div class="progress">
+							<div class="progress-bar progressBarCustom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="immunizations.html" class="btn skip-btn active">Finish Later
+							<i class="fa fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h2 class="loginScreenTitle form-group">Allergies</h2>
+			<p class="text-center">{dev note: this page has conditional requirements}</p>
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<form >
+					<div class="form-group">
+						<label>Allergen:</label>
+						<select class="form-control bg-grey customHeight">
+							<option value="" disabled selected>Enter allergen</option>
+							<option value="">Allergen 1</option>
+							<option value="">Allergen 2</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Reaction:</label>
+						<select class="form-control bg-grey customHeight">
+							<option value="" disabled selected>Enter reaction</option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Comments:</label>
+						<textarea class="form-control bg-grey customTextArea"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<label>Start Date:</label>
+								<input class="form-control bg-grey customHeight" placeholder="MM/DD/YYYY">
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<label>End Date:</label>
+								<input class="form-control bg-grey customHeight" placeholder="MM/DD/YYYY">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row text-left">
+							<div class="col-md-12 addPlus">
+								<a href="#"><strong>+ Add another allergen</strong></a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<a href="meds.html" class="btn btn-block btn-blue customHeight">Prev</a>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<a href="immunizations.html" class="btn btn-block btn-green customHeight">Next</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+		</div>
+	</div>
+</body>
+</html>

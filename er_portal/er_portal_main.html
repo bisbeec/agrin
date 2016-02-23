@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../jqui/jquery-ui.css">
+	<link rel="stylesheet" href="../assets/custom.css">
+	<title>ER Portal / Home</title>
+</head>
+<body>
+	<div class="container-fluid" id="erPortalDash">
+		<ul class="mobileMenu" id="menu">
+			<li>
+				<a href="#personal_information">Personal Information</a>
+			</li>
+			<li>
+				<a href="#insurance">Insurance</a>
+			</li>
+			<li>
+				<a href="#emergency_contact">Emergency Contact</a>
+			</li>
+			<li>
+				<a href="#current_conditions">Current Conditions</a>
+			</li>
+			<li>
+				<a href="#treatment_preferences">Treatment Preferences</a>
+			</li>
+			<li>
+				<a href="#foreign_travel">Foreign Travel</a>
+			</li>
+			<li>
+				<a href="login.html"><strong>Sign Out</strong></a>
+			</li>
+		</ul>
+		<header class="dashboardHeader">
+			<div class="pull-left dashboardHeaderLeft">
+				<a class="text-center" href="#"><img src="../assets/images/full-logo.jpg" alt="Agrin Health"></a>
+				<i id="mobileMenuToggle" class="glyphicon glyphicon-menu-hamburger"></i>
+			</div>
+			<div class="pull-right dashboardHeaderRight">
+				<div class="wideScreenHeaderNav">
+					<a class="userNameHeader"href="#">Org Name</a>
+					<a class="btn" href="login.html">Sign Out</a>
+				</div>
+			</div>
+		</header>
+		<div class="row rowPushDown">
+			<div class="col-lg-3 col-md-3 col-sm-3 sidebar-back"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 aside text-center">
+				<span class="glyphicon glyphicon-plus"></span>
+				<h4 class="text-blue">John Doe</h4>
+				<ul class="sidebarNav">
+					<li>
+						<a href="#personal_info">Personal Information</a>
+					</li>
+					<li>
+						<a href="#insurance">Insurance</a>
+					</li>
+					<li>
+						<a href="#emergency_contact">Emergency Contact</a>
+					</li>
+					<li>
+						<a href="#current_conditions">Current Conditions</a>
+					</li>
+					<li>
+						<a href="#treatment_preferences">Treatment Preferences</a>
+					</li>
+					<li>
+						<a href="#foreign_travel">Foreign Travel</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 dashboardMain" id="personal_info">
+				<div id="tabs" class="customTabs">
+					<ul>
+						<li><a href="#tabs-1">Kirsten Smith</a></li>
+						<li>
+							<a href="#tabs-2">
+								<i class="fa fa-plus-circle"></i>
+								Add patient
+							</a>
+						</li>
+					</ul>
+					<div id="tabs-1">
+						<div class="col-lg-12 col-md-12">
+							<div class="row">
+								<div class="col-lg-10 col-md-10 col-sm-10">
+									<div class="well relative">
+										<p>Welcome to your ER Portal, <strong>John Doe</strong>. Use this section to... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<a href="#" class="removeX">
+											<span class="glyphicon glyphicon-remove-circle"></span>
+										</a>
+										<p class="alertDNR" >ALERT: DNR on file</p>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 form-group">
+									<div class="printExport">
+										<a href="javascript:window.print()">
+											<i class="fa fa-print" title="Print"></i>
+											Print
+										</a>
+										<a href="#">
+											<i class="fa fa-share-square" title="Export"></i>
+											Export
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="EPsection">
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Personal Information</h2>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<form>
+											<div class="row">
+												<div class="col-md-5 form-group">
+													<label>Home Street Address:</label>
+													<input class="form-control bg-grey customHeight" readonly value="53 Oak Street">
+												</div>
+												<div class="col-md-3 col-sm-4 col-xs-4 form-group">
+													<label>City:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Boston">
+												</div>
+												<div class="col-md-2 col-sm-4 col-xs-4 form-group">
+													<label>State:</label>
+													<input class="form-control bg-grey customHeight" readonly value="MA">
+												</div>
+												<div class="col-md-2 col-sm-4 col-xs-4 form-group">
+													<label>Zip Code:</label>
+													<input class="form-control bg-grey customHeight" readonly value="02144">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-7 col-sm-7 form-group">
+													<label>Address 2:</label>
+													<input class="form-control bg-grey customHeight" readonly>
+												</div>
+												<div class="col-md-5 col-sm-5 form-group">
+													<label>Email:</label>
+													<input class="form-control bg-grey customHeight" readonly value="ksmith@yahoo.com">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-2 col-sm-3 col-xs-6 form-group">
+													<label>Phone 1:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Cell">
+												</div>
+												<div class="col-md-4 col-sm-3 col-xs-6 form-group">
+													<label class="text-white">.</label>
+													<input class="form-control bg-grey customHeight" readonly value="777-777-7777">
+												</div>
+												<div class="col-md-2 col-sm-3 col-xs-6 form-group">
+													<label>Phone 2:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Home">
+												</div>
+												<div class="col-md-4 col-sm-3 col-xs-6 form-group">
+													<label class="text-white">.</label>
+													<input class="form-control bg-grey customHeight" readonly value="777-888-9999">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5 col-sm-4 form-group">
+													<label>Religion:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Buddhist">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Primary Language:</label>
+													<input class="form-control bg-grey customHeight" readonly value="English">
+												</div>
+												<div class="col-md-3 col-sm-4 form-group">
+													<label>Veteran Status:</label>
+													<input class="form-control bg-grey customHeight" readonly value="N/A">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3 col-sm-3 form-group">
+													<label>SSN:</label>
+													<input class="form-control bg-grey customHeight" readonly value="000-00-0000">
+												</div>
+												<div class="col-md-3 col-sm-3 form-group">
+													<label>Blood Type:</label>
+													<input class="form-control bg-grey customHeight" readonly value="AB">
+												</div>
+												<div class="col-md-3 col-sm-3 form-group">
+													<label>Sex:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Female">
+												</div>
+												<div class="col-md-3 col-sm-3 form-group">
+													<label>Marital Status:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Married">
+												</div>
+												<span id="insurance"></span>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="EPsection">
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Insurance</h2>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group">Primary Insurance</h4>
+										<form class="form-group">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Type:</label>
+													<input class="form-control bg-grey customHeight" readonly value="HMO">
+												</div>
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Company:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Blue Cross">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Guarantor Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Bill Smith">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>SSN:</label>
+													<input class="form-control bg-grey customHeight" readonly value="333-33-3333">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Guarantor DOB:</label>
+													<input class="form-control bg-grey customHeight" readonly value="03/23/1949">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Effective Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2010">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>End Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2014">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Policy #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="4789VW66">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Group #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="390078">
+												</div>
+											</div>
+										</form>
+
+										<h4 class="form-group mini-border">Secondary Insurance</h4>
+										<form class="form-group">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Type:</label>
+													<input class="form-control bg-grey customHeight" readonly value="HMO">
+												</div>
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Company:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Blue Cross">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Guarantor Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Bill Smith">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>SSN:</label>
+													<input class="form-control bg-grey customHeight" readonly value="333-33-3333">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Guarantor DOB:</label>
+													<input class="form-control bg-grey customHeight" readonly value="03/23/1949">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Effective Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2010">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>End Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2014">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Policy #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="4789VW66">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Group #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="390078">
+												</div>
+											</div>
+										</form>
+										<h4 class="form-group mini-border">Tertiary Insurance</h4>
+										<form class="form-group">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Type:</label>
+													<input class="form-control bg-grey customHeight" readonly value="HMO">
+												</div>
+												<div class="col-md-6 col-sm-6 form-group">
+													<label>Insurance Company:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Blue Cross">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Guarantor Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Bill Smith">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>SSN:</label>
+													<input class="form-control bg-grey customHeight" readonly value="333-33-3333">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Guarantor DOB:</label>
+													<input class="form-control bg-grey customHeight" readonly value="03/23/1949">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Effective Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2010">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>End Date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="08/23/2014">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Policy #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="4789VW66">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Group #:</label>
+													<input class="form-control bg-grey customHeight" readonly value="390078">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="EPsection">
+								<span id="emergency_contact"></span>
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Emergency Contact</h2>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group">Primary Contact</h4>
+										<form>
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>First name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Jane">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>Last name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Doe">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>Relationship:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Spouse">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5 form-group">
+													<label>Home Street Address:</label>
+													<input class="form-control bg-grey customHeight" readonly value="53 Oak Street">
+												</div>
+												<div class="col-md-3 col-sm-4 col-xs-4 form-group">
+													<label>City:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Boston">
+												</div>
+												<div class="col-md-2 col-sm-4 col-xs-4 form-group">
+													<label>State:</label>
+													<input class="form-control bg-grey customHeight" readonly value="MA">
+												</div>
+												<div class="col-md-2 col-sm-4 col-xs-4 form-group">
+													<label>Zip Code:</label>
+													<input class="form-control bg-grey customHeight" readonly value="02144">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-12 form-group">
+													<label>Email:</label>
+													<input class="form-control bg-grey customHeight" readonly value="janedoe@gmail.com">
+												</div>
+												<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+													<label>Phone 1:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Cell">
+												</div>
+												<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+													<label class="text-white">.</label>
+													<input class="form-control bg-grey customHeight" readonly value="777-777-7877">
+												</div>
+												<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+													<label>Phone 2:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Home">
+												</div>
+												<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+													<label class="text-white">.</label>
+													<input class="form-control bg-grey customHeight" readonly value="777-888-9999">
+												</div>
+											</div>
+											<a href=""><strong>Add a contact</strong></a>
+										</form>
+									</div>
+								</div>
+								<!-- Add emergency contact accordion
+								<div id="accordion">
+									<h3>Add a contact</h3>
+									<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+									<h3>Second</h3>
+									<div>Phasellus mattis tincidunt nibh.</div>
+									<h3>Third</h3>
+									<div>Nam dui erat, auctor a, dignissim quis.</div>
+								</div>-->
+							</div>
+							<div class="EPsection">
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Current Conditions</h2>
+									<span id="current_conditions"></span>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group">Current Medical Diagnosis</h4>
+										<form class="form-group">
+											<div class="row">
+												<div class="col-md-8 col-sm-8 col-xs-8 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly>
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>Start date:</label>
+													<input class="form-control bg-grey customHeight" readonly>
+												</div>
+											</div>
+											<div class="noMedConditions">
+												<i class="fa fa-check-square-o"></i>
+												<span>No medical conditions reported</span>
+											</div>
+											<a href=""><strong>Add a condition</strong></a>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group mini-border">Current Behavorial Diagnosis</h4>
+										<form class="form-group">
+											<div class="row">
+												<div class="col-md-8 col-sm-8 col-xs-8 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Obsessive Compulsive Disorder">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>Start date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="01/01/1999">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-8 col-sm-8 col-xs-8 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="ADHD">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+													<label>Start date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="05/10/1997">
+												</div>
+											</div>
+											<p>{dev note: if patient has opted out of sharing, display this information}</p>
+											<a href=""><strong>Add a condition</strong></a>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group mini-border">Current Medications, Vitamins & Supplements</h4>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Aderol">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="3 mg">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-12 form-group">
+													<label>Frequency:</label>
+													<input class="form-control bg-grey customHeight" readonly value="1x / day">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date prescribed:</label>
+													<input class="form-control bg-grey customHeight" readonly value="10/20/2000">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Last taken dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="10 mg">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="01/21/2016">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Time last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="14:25">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<label>Side Effects:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Occasional nausea, vomitting. No incidents since 05/2016.">
+												</div>
+											</div>
+										</form>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Benadryl">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="1 mg">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-12 form-group">
+													<label>Frequency:</label>
+													<input class="form-control bg-grey customHeight" readonly value="2x / day">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date prescribed:</label>
+													<input class="form-control bg-grey customHeight" readonly value="04/20/2010">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Last taken dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="10 mg">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="01/21/2016">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Time last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="14:25">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<label>Side Effects:</label>
+													<input class="form-control bg-grey customHeight" readonly value="NR">
+												</div>
+											</div>
+										</form>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Riboflavin">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="2 mg">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-12 form-group">
+													<label>Frequency:</label>
+													<input class="form-control bg-grey customHeight" readonly value="2x / day">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date prescribed:</label>
+													<input class="form-control bg-grey customHeight" readonly value="10/24/2005">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Last taken dosage:</label>
+													<input class="form-control bg-grey customHeight" readonly value="2 mg">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Date last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="01/21/2016">
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+													<label>Time last taken:</label>
+													<input class="form-control bg-grey customHeight" readonly value="10:20">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<label>Side Effects:</label>
+													<input class="form-control bg-grey customHeight" readonly value="NR">
+												</div>
+											</div>
+										</form>
+										<a href=""><strong>Add a medication, vitamin or supplement</strong></a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group mini-border">Current Allergies</h4>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Allergen name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Hay fever">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Reaction:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Sneezing, sore throat">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Onset date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="06/20/2003">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Current treatment:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Clarinex">
+												</div>
+											</div>
+										</form>
+										<a href=""><strong>Add an allergen</strong></a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<h4 class="form-group mini-border">Current Immunizations</h4>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Vaccine name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Hep B">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Date given:</label>
+													<input class="form-control bg-grey customHeight" readonly value="04/30/2001">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<label>Reaction:</label>
+													<input class="form-control bg-grey customHeight" readonly value="NR">
+												</div>
+											</div>
+										</form>
+										<form class="form-group blockForm">
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Vaccine name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Tetanus">
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+													<label>Date given:</label>
+													<input class="form-control bg-grey customHeight" readonly value="04/30/2004">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<label>Reaction:</label>
+													<input class="form-control bg-grey customHeight" readonly value="NR">
+												</div>
+											</div>
+										</form>
+										<a href=""><strong>Add an immunization</strong></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="EPsection">
+								<span id="treatment_preferences"></span>
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Treatment Preferences</h2>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<form>
+											<div class="row">
+												<div class="col-md-4 form-group">
+													<label>Living will:</label>
+													<i class="fa fa-square-o treatmentPrefs"></i>
+
+														<i class="fa fa-file-text-o treatmentPrefs" title="Open as PDF"></i>
+
+												</div>
+												<div class="col-md-4 form-group">
+													<label>Do not rescusitate:</label>
+													<i class="fa fa-check-square-o treatmentPrefs"></i>
+													<a href="">
+														<i class="fa fa-file-text-o treatmentPrefs" title="Open as PDF"></i>
+													</a>
+												</div>
+												<div class="col-md-4 form-group">
+													<label>Organ donor:</label>
+													<i class="fa fa-check-square-o treatmentPrefs"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 form-group">
+													<label>Medical power of attorney:</label>
+													<i class="fa fa-check-square-o treatmentPrefs"></i>
+													<a href="">
+														<i class="fa fa-file-text-o treatmentPrefs" title="Open as PDF"></i>
+													</a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5 col-sm-5 form-group">
+													<label>POA name:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Paul Michael Smith">
+												</div>
+												<div class="col-md-3 col-sm-3 form-group">
+													<label>Phone:</label>
+													<input class="form-control bg-grey customHeight" readonly value="333-554-6788">
+												</div>
+												<div class="col-md-4 col-sm-4 form-group">
+													<label>Email:</label>
+													<input class="form-control bg-grey customHeight" readonly value="paulmsmith@hotmail.com">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="EPsection">
+								<span id="foreign_travel"></span>
+								<div class="form-group dashboardPageTitleRow">
+									<h2>Foreign Travel <span class="recentTravel"><small>(within the past 12 months)</small></span></h2>
+								</div>
+								<div class="form-group">
+									<input type="checkbox">
+									<label>Select if patient reported different information</label>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<form>
+											<div class="row">
+												<div class="col-md-5 col-sm-4 col-xs-12 form-group">
+													<label>Location:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Argentina, Brazil">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Departure date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="12/02/2015">
+												</div>
+												<div class="col-md-3 col-sm-4 col-xs-6 form-group">
+													<label>Return date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="01/01/2016">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-5 col-sm-4 col-xs-12 form-group">
+													<label>Location:</label>
+													<input class="form-control bg-grey customHeight" readonly value="Europe">
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+													<label>Departure date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="04/02/2015">
+												</div>
+												<div class="col-md-3 col-sm-4 col-xs-6 form-group">
+													<label>Return date:</label>
+													<input class="form-control bg-grey customHeight" readonly value="05/01/2015">
+												</div>
+											</div>
+											
+											<a href=""><strong>Add a recent travel experience</strong></a>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tabs-2">
+						<div class="container" id="erLoginTab">
+							<form>
+								<div class="form-group">
+									<h2 class="patientInfo">Patient Information</h2>
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+											<label>First Name:</label>
+											<input type="text" class="form-control bg-grey opaque" placeholder="First Name">
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+											<label>Last Name:</label>
+											<input type="text" class="form-control bg-grey opaque" placeholder="Last Name">
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 dob">
+											<label>DOB:</label>
+											<input type="text" class="form-control bg-grey opaque" placeholder="MM/DD/YYYY">
+										</div>
+									</div>
+								</div>
+								<div class="form-group patientPin">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+											<label>Patient PIN:</label>
+											<i title="This is the security code selected by the patient. They must provide it for you." class="fa fa-question-circle text-red"></i>
+											<input type="text" class="form-control bg-grey opaque" placeholder="* * * *">
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<a class="btn btn-green customHeight btn-block" href="er_portal_main.html">Submit</a>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+									</div>
+								</div>
+							</form>
+							<div class="form-group needHelp">
+								<p>Need help? Contact us at <a href="">999-9999</a> for technical support.</p>
+								<p><a href="https://www.agrinhealth.com" target="_blank">agrinhealth.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../jqui/external/jquery/jquery.js"></script>
+	<script src="../jqui/jquery-ui.js"></script>
+	<script src="../assets/custom.js"></script>
+	<script>
+
+		$( "#tabs" ).tabs();
+    	$( "#selectmenu" ).selectmenu();
+    	$( "#accordion" ).accordion();
+
+
+		$(window).scroll(function() {    
+		    var scrollDown = $(window).scrollTop();
+
+		    if (scrollDown >= 140) {
+		        $(".alertDNR").addClass("alertDNRfixed");
+		    }
+		});
+
+		$(window).scroll(function() {    
+		    var scrollUp = $(window).scrollTop();
+
+		    if (scrollUp <= 140) {
+		        $(".alertDNR").removeClass("alertDNRfixed");
+		    }
+		});
+	</script>
+</body>
+</html>

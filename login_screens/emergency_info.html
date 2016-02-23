@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../jqui/jquery-ui.css">
+	<link rel="stylesheet" href="../assets/custom.css">
+	<title>Emergency Information</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="text-center">
+			<a href="#"><img src="../assets/images/full-logo.jpg" alt="Agrin Health"></a>
+		</header>
+		<div class="row rowPushDown">
+			<div class="form-group progressBarWrap">
+				<div class="row flexRow">
+					<div class="col-md-1 col-sm-1 col-xs-1 fractionWrap">
+						<label style="margin-top: 5px"><strong>3/10</strong></label>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<div class="progress">
+							<div class="progress-bar progressBarCustom" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="insurance_info.html" class="btn skip-btn active">Finish Later
+							<i class="fa fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h2 class="loginScreenTitle form-group">Emergency Information</h2>
+			<p class="text-center">{dev note: this page has conditional requirements}</p>
+			<div class="col-lg-2 col-md-2 col-sm-2"></div>
+			<div class="col-lg-8 col-md-8 col-sm-8">
+				<div class="col-lg-5 col-md-5 col-sm-5 form-group">
+					<form>
+						<div class="form-group">
+							<label>Main Contact: Name</label>
+							<input class="form-control bg-grey customHeight">
+						</div>
+						<div class="form-group">
+							<label>Main Contact: Relationship</label>
+							<select class="form-control bg-grey customHeight">
+								<option>...</option>
+								<option>...</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<label>Main Contact: Phone</label>
+									<input class="form-control bg-grey customHeight">
+								</div>
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<label>Phone Type:</label>
+									<select class="form-control bg-grey customHeight">
+										<option>Mobile</option>
+										<option>...</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Main Contact: email</label>
+							<input class="form-control bg-grey customHeight">
+						</div>
+						<div class="form-group">
+							<label class="text-red"><strong>ER PIN</strong></label>
+							<input class="customHeight" placeholder="4 digits">
+							<i title="An ER Pin is an important number that helps you...." class="fa fa-question-circle text-red"></i>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<div class="verticalDivide long"></div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 form-group">
+					<form>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" aria-label="...">
+									Healthcare Power of Attorney (POA)
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>POA Name:</label>
+							<input class="form-control bg-grey customHeight">
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<label>POA Phone:</label>
+									<input class="form-control bg-grey customHeight">
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<label>Phone Type:</label>
+									<select class="form-control bg-grey customHeight">
+										<option>Mobile</option>
+										<option>...</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>POA email:</label>
+							<input class="form-control bg-grey customHeight">
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" aria-label="...">
+									Living Will
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" aria-label="...">
+									Organ Donor
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" aria-label="...">
+									Do Not Resuscitate (DNR)
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<i class="fa fa-camera text-blue"></i>
+							<a href="#" class="btn greyBtn">Attach Documentation</a>
+						</div>
+						<div class="form-group addPlus">
+							<a href="#"><strong>+ Add another contact</strong></a>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
+							<a href="basic_profile2.html" class="btn btn-blue btn-block customHeight">Prev</a>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
+							<a href="insurance_info.html" class="btn btn-green btn-block customHeight">Next</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2"></div>
+		</div>
+	</div>
+	<script src="../jqui/external/jquery/jquery.js"></script>
+	<script src="../jqui/jquery-ui.js"></script>
+	<script src="../assets/custom.js"></script>
+</body>
+</html>

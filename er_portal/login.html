@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../jqui/jquery-ui.css">
+	<link rel="stylesheet" href="../assets/custom.css">
+	<title>ER Portal / Login</title>
+</head>
+<body>
+	<header class="text-center erHeader">
+		<a href="#"><img src="../assets/images/full-logo.jpg" alt="Agrin Health"></a>
+	</header>
+	<h2 class="welcome">Welcome to the Agrin Health Emergency Responder Portal</h2>
+	<div class="container" id="erLogin">
+		<div class="fader">
+			<form>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label>Your Name:</label>
+							<input type="text" class="form-control bg-grey opaque" placeholder="First">
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<label class="text-white">.</label>
+							<input type="text" class="form-control bg-grey opaque" placeholder="Last">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<label>Organization:</label>
+							<input type="text" class="form-control bg-grey opaque">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<h2 class="patientInfo">Patient Information</h2>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+							<label>First Name:</label>
+							<input type="text" class="form-control bg-grey opaque" placeholder="First Name">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+							<label>Last Name:</label>
+							<input type="text" class="form-control bg-grey opaque" placeholder="Last Name">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 dob">
+							<label>DOB:</label>
+							<input type="text" class="form-control bg-grey opaque" placeholder="MM/DD/YYYY">
+						</div>
+					</div>
+				</div>
+				<div class="form-group patientPin">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+							<label>Patient PIN:</label>
+							<i title="This is the security code selected by the patient. They must provide it for you." class="fa fa-question-circle text-red"></i>
+							<input type="text" class="form-control bg-grey opaque" placeholder="* * * *">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<a class="btn btn-green customHeight btn-block" href="er_portal_main.html">Submit</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+					</div>
+				</div>
+			</form>
+			<div class="form-group needHelp">
+				<p>Need help? Contact us at <a href="">999-9999</a> for technical support.</p>
+				<p><a href="https://www.agrinhealth.com" target="_blank">agrinhealth.com</a></p>
+			</div>
+		</div>
+	</div>
+	<script src="../jqui/external/jquery/jquery.js"></script>
+	<script src="../jqui/jquery-ui.js"></script>
+	<script src="../assets/custom.js"></script>
+</body>

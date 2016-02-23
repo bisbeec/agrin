@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="jqui/jquery-ui.css">
+	<link rel="stylesheet" href="assets/custom.css">
+	<title>Dashboard / Daily Tracker</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<ul class="mobileMenu" id="menu">
+			<li>
+				<a href="dashboard.html">
+					<i class="fa fa-home iProperties"></i>
+					Home
+				</a>
+				<i class="fa fa-arrow-down withSubHome"></i>
+				<ul class="subHome">
+					<li>
+						<a href="dashboard_dailytracker.html">Daily Tracker</a>
+					</li>
+					<li>
+						<a href="dashboard_goals.html">Goals & Tasks</a>
+					</li>
+					<li>
+						<a href="dashboard_metrics.html">Metrics & Tracking</a>
+					</li>
+					<li>
+						<a href="dashboard_resources.html">Resources</a>
+					</li>
+					<li>
+						<a href="dashboard_medications.html">Medications</a>
+					</li>
+					<li>
+						<a href="dashboard_allergies.html">Allergies</a>
+					</li>
+					<li>
+						<a href="dashboard_immunizations.html">Immunizations</a>
+					</li>
+					<li>
+						<a href="dashboard_healthevents.html">Health Events</a>
+					</li>
+					<li>
+						<a href="dashboard_appointments.html">Appointments</a>
+					</li>
+					<li>
+						<a href="dashboard_medicalwallet.html">Medical Wallet</a>
+					</li>
+					<li>
+						<a href="dashboard_familyhistory.html">Family History</a>
+					</li>
+					<li>
+						<a href="dashboard_myrecord.html">My Record</a>
+					</li>
+					<li>
+						<a href="dashboard_myjournal.html">My Journal</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="profile_basicinfo.html">
+					<i class="fa fa-user"></i>
+					Profile
+				</a>
+				<i class="fa fa-arrow-down withSubProfile"></i>
+				<ul class="subProfile">
+					<li>
+						<a href="profile_basicinfo.html">Basic Information</a>
+					</li>
+					<li>
+						<a href="profile_insuranceinfo.html">Insurance Information</a>
+					</li>
+					<li>
+						<a href="profile_emergencyinfo.html">Emergency Information</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="account.html">
+					<i class="fa fa-folder"></i>
+					Account
+				</a>
+			</li>
+			<li>
+				<a href="settings_default.html">
+					<i class="fa fa-cog"></i>
+					Settings
+				</a>
+				<i class="fa fa-arrow-down withSubSettings"></i>
+				<ul class="subSettings">
+					<li>
+						<a href="settings_default.html">Default Preferences</a>
+					</li>
+					<li>
+						<a href="settings_emergency.html">Emergency Access</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="messages.html">
+					<i class="fa fa-comment"></i>
+					Messages (5)
+				</a>
+			</li>
+			<li>
+				<a href="devices.html">
+					<i class="fa fa-refresh"></i>
+					Devices, Apps (5)
+				</a>
+			</li>
+			<li>
+				<a href="careteam.html">
+					<i class="fa fa-share-square-o"></i>
+					Sharing/ Care Team
+				</a>
+			</li>
+			<li>
+				<a href="support_cause.html">
+					<i class="fa fa-gift"></i>
+					<span><strong>Support a cause</strong></span>
+				</a>
+			</li>
+			<li>
+				<a href="help.html">
+					<i class="fa fa-question-circle"></i>
+					<span><strong>Help</strong></span>
+				</a>
+			</li>
+			<li>
+				<a href="login_screens/login.html">
+					<span><strong>Sign Out</strong></span>
+				</a>
+			</li>
+		</ul>
+		<header class="dashboardHeader">
+			<div class="pull-left dashboardHeaderLeft">
+				<a class="text-center" href="#"><img src="assets/images/full-logo.jpg" alt="Agrin Health"></a>
+				<i id="mobileMenuToggle" class="glyphicon glyphicon-menu-hamburger"></i>
+			</div>
+			<div class="pull-right dashboardHeaderRight">
+				<div class="wideScreenHeaderNav">
+					<a class="userNameHeader"href="#">Kirsten Smith</a>
+					<a class="btn" href="login_screens/login.html">Sign Out</a>
+				</div>
+			</div>
+		</header>
+		<div class="row rowPushDown">
+			<div class="col-lg-3 col-md-3 col-sm-3 sidebar-back"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 aside text-center">
+				<img class="userImg" src="assets/images/user-image.png">
+				<h4>Kirsten Smith</h4>
+				<ul class="sidebarNav">
+					<li>
+						<a class="active" href="dashboard.html">
+							<i class="fa fa-home iProperties"></i>
+							Home
+						</a>
+						<ul class="dropdown sidenavDropdown homeDropdown">
+							<li class="active">
+								<i class="fa fa-long-arrow-right"></i>
+								<a href="dashboard_dailytracker.html">Daily Tracker</a>
+							</li>
+							<li><a href="dashboard_goals.html">Goals & Tasks</a></li>
+							<li><a href="dashboard_metrics.html">Metrics & Tracking</a></li>
+							<li>
+								<a href="dashboard_resources.html">Resources</a>
+								<ul class="dropdown">
+									<li><a href="dashboard_myportals.html">My Portals</a></li>
+								</ul>
+							</li>
+							<li><a href="dashboard_medications.html">Medications</a></li>
+							<li><a href="dashboard_allergies.html">Allergies</a></li>
+							<li><a href="dashboard_immunizations.html">Immunizations</a></li>
+							<li><a href="dashboard_healthevents.html">Health Events</a></li>
+							<li><a href="dashboard_appointments.html">Appointments</a></li>
+							<li><a href="dashboard_medicalwallet.html">Medical Wallet</a></li>
+							<li><a href="dashboard_familyhistory.html">Family History</a></li>
+							<li><a href="dashboard_myrecord.html">My Record</a></li>
+							<li><a href="dashboard_myjournal.html">My Journal</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="profile_basicinfo.html">
+							<i class="fa fa-user"></i>
+							Profile
+						</a>
+					</li>
+					<li>
+						<a href="account.html">
+							<i class="fa fa-folder"></i>
+							Account
+						</a>
+					</li>
+					<li>
+						<a href="settings_default.html">
+							<i class="fa fa-cog"></i>
+							Settings
+						</a>
+					</li>
+					<li>
+						<a href="messages.html">
+							<i class="fa fa-comment"></i>
+							Messages (5)
+						</a>
+					</li>
+					<li>
+						<a href="devices.html">
+							<i class="fa fa-refresh"></i>
+							Devices, Apps (5)
+						</a>
+					</li>
+					<li>
+						<a href="careteam.html">
+							<i class="fa fa-share-square-o"></i>
+							Sharing/ Care Team
+						</a>
+					</li>
+				</ul>
+				<ul class="sidebarNav supportCause">
+					<li>
+						<a href="support_cause.html">
+							<i class="fa fa-gift"></i>
+							<span class="text-green"><strong>Support a cause</strong></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 dashboardMain">
+				<div class="tabsWrap">
+					<div class="tabOne text-center col-lg-2 col-md-2 col-sm-2 col-xs-4">Kirsten</div>
+					<div class="tabTwo col-lg-10 col-md-10 col-sm-10 col-xs-8">
+						<a href="login_screens/basic_profile.html">
+							<i class="fa fa-plus-circle"></i>
+							Add family member
+						</a>
+						<a href="help.html" class="pull-right">
+							<span class="help">Help</span>
+							<i class="fa fa-question-circle text-blue"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-8">
+					<div class="well relative">
+						<p><strong>Welcome to Agrin Health</strong>. Did you know you can connect your fitness tracking device so we can offer you better recommendations? Go ahead and <a href="#"><strong>add one</strong></a>.</p>
+						<a href="#" class="removeX">
+							<span class="glyphicon glyphicon-remove-circle"></span>
+						</a>
+					</div>
+					<div class="dashboardPageTitleRow form-group">
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8 form-group">
+								<h2>Daily Tracker Information</h2>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<a href="#"><strong>+ Add Item to Track Daily</strong></a>
+							</div>
+						</div>
+					</div>
+					<div class=" calendarRow form-group">
+						<form class="form-inline">
+							<div class="form-group">
+								<label>Date:</label>
+								<input class="bg-grey customHeight form-control" placeholder="12/25/2015">
+								<a href="#"><i class="fa fa-calendar text-blue" title="tooltip here"></i></a>
+							</div>
+						</form>
+					</div>
+					<div class="row water-weight-bpRow">
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<form class="text-center dailyTrackerGreyFormBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+								<h4>Water</h4>
+								<div class="form-group">
+									<div>
+										<div class="form-group pull-left forty-fivePercent">
+											<input class="customHeight form-control" placeholder="4">
+										</div>
+										<div class="form-group pull-right forty-fivePercent">
+											<input class="customHeight form-control" placeholder="Cups">
+										</div>
+									</div>
+								</div>
+								<p class="text-red goalText">Goal - 8 cups</p>
+							</form>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<form class="text-center dailyTrackerGreyFormBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+								<h4>Weight</h4>
+								<div class="form-group">
+									<div>
+										<div class="form-group pull-left forty-fivePercent">
+											<input class="customHeight form-control" placeholder="125">
+										</div>
+										<div class="form-group pull-right forty-fivePercent">
+											<input class="customHeight form-control" placeholder="lbs.">
+										</div>
+									</div>
+								</div>
+								<p class="text-green goalText">Goal - 130 lbs</p>
+							</form>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<form class="text-center dailyTrackerGreyFormBox bpBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+								<h4>Blood Pressure</h4>
+								<div class="form-group">
+									<div>
+										<div class="form-group pull-left forty-fivePercent">
+											<input class="customHeight form-control" placeholder="120">
+										</div>
+										<span class="slash">/</span>
+										<div class="form-group pull-right forty-fivePercent">
+											<input class="customHeight form-control" placeholder="80">
+										</div>
+									</div>
+								</div>
+								<p class="text-red goalText">Goal - 120 / 70</p>
+							</form>
+						</div>
+					</div>
+					<div class="row middleRow">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="dailyTrackerGreyFormBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+								<h4>Nutrition</h4>
+								<table>
+									<tr>
+										<td class="small-font">
+											Breakfast
+										</td>
+										<td>
+											<input placeholder="apple, cereal">
+										</td>
+										<td>
+											<input placeholder="150">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Lunch</td>
+										<td>
+											<input placeholder="salad, chicken">
+										</td>
+										<td>
+											<input placeholder="350">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Dinner</td>
+										<td>
+											<input placeholder="pizza">
+										</td>
+										<td>
+											<input placeholder="500">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Snack</td>
+										<td>
+											<input placeholder="banana, cupcake">
+										</td>
+										<td>
+											<input placeholder="450">
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="text-green xsmall-font">Goal - 1500 Calories</td>
+										<td>
+											<input placeholder="1450">
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="dailyTrackerGreyFormBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+	     						<a href="#" class="addNew small-font"><strong>+ Add new exercise type</strong></a>
+								<h4>Exercise</h4>
+								<table>
+									<tr>
+										<td class="small-font">
+											Crunches
+										</td>
+										<td>
+											<input placeholder="15 minutes">
+										</td>
+										<td>
+											<input placeholder="50">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Leg Lifts</td>
+										<td>
+											<input placeholder="30 minutes">
+										</td>
+										<td>
+											<input placeholder="50">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Running</td>
+										<td>
+											<input placeholder="40 minutes">
+										</td>
+										<td>
+											<input placeholder="400">
+										</td>
+									</tr>
+									<tr>
+										<td class="small-font">Yoga</td>
+										<td>
+											<input placeholder="20 minutes">
+										</td>
+										<td>
+											<input placeholder="150">
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="text-green xsmall-font">Goal - 300 Calories Burned</td>
+										<td>
+											<input placeholder="650">
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row bottomRow form-group">
+						<div class="col-lg-9 col-md-9">
+							<div class="dailyTrackerGreyFormBox">
+								<a href="#" class="removeX small">
+	     							<span class="glyphicon glyphicon-remove-circle"></span>
+	     						</a>
+	     						<a href="#" class="addNew small-font"><strong>+ Add new medication</strong></a>
+	     						<h4>Medication</h4>
+	     						<table>
+	     							<tr>
+	     								<td class="xsmall-font">Current Med 1</td>
+	     								<td>
+	     									<input placeholder="10 Mg">
+	     								</td>
+	     								<td>
+	     									<input placeholder="1">
+	     								</td>
+	     								<td>
+	     									<input placeholder="10:30AM">
+	     								</td>
+	     								<td class="relative">
+	     									<i class="fa fa-check-circle"></i>
+	     									<input type="submit" class="btn btn-green btn-tookit" value="Took It">
+	     								</td>
+	     								<td class="relative">
+	     									<span class="glyphicon glyphicon-remove-circle"></span>
+	     									<input type="submit" class="btn btn-skipit" value="Skip It">
+	     								</td>
+	     							</tr>
+	     							<tr>
+	     								<td class="xsmall-font">Current Med 1</td>
+	     								<td>
+	     									<input placeholder="40 Mg">
+	     								</td>
+	     								<td>
+	     									<input placeholder="2">
+	     								</td>
+	     								<td>
+	     									<input placeholder="1:00PM">
+	     								</td>
+	     								<td class="relative">
+	     									<span class="glyphicon glyphicon-remove-circle"></span>
+	     									<input type="submit" class="btn btn-skipit" value="Skip It">
+	     								</td>
+	     								<td class="relative">
+	     									<i class="fa fa-check-circle"></i>
+	     									<input type="submit" class="btn btn-green btn-tookit" value="Took It">
+	     								</td>
+	     							</tr>
+	     						</table>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 submitBtnCol form-group">
+							<a href="#" class="btn btn-green btn-block customHeight">Submit</a>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="rightBarSec greyOverride">
+						<p><strong>Progress</strong></p>
+						<div class="progress">
+							<div class="progress-bar progressBarCustom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+						</div>
+						<p>Next action: <a href="#">add your allergies</a></p>
+					</div>
+					<div class="rightBarSec">
+						<h4>History</h4>
+						<div class="rightBarWhiteBox">
+							<div class="whiteBoxTop">
+								<div class="dot green"></div>
+								<h4 class="date pull-left">12/24/2015</h4>
+								<a href="#" class="text-green edit">edit</a>
+							</div>
+							<table>
+								<tr>
+									<td colspan="3">Water 2</td>
+									<td colspan="3">Weight 126.2</td>
+									<td colspan="3">BP 124/84</td>
+								</tr>
+								<tr>
+									<td colspan="3">Nutrition</td>
+									<td colspan="3">1700 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Exercise</td>
+									<td colspan="3">45 min., 350 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Medication</td>
+									<td colspan="3">Taken</td>
+									<td colspan="3"></td>
+								</tr>
+							</table>
+							<a href="#">
+								<i class="fa fa-trash-o text-red"></i>
+							</a>
+						</div>
+						<div class="rightBarWhiteBox">
+							<div class="whiteBoxTop">
+								<div class="dot green"></div>
+								<h4 class="date pull-left">12/23/2015</h4>
+								<a href="#" class="text-green edit">edit</a>
+							</div>
+							<table>
+								<tr>
+									<td colspan="3">Water 2</td>
+									<td colspan="3">Weight 126.2</td>
+									<td colspan="3">BP 124/84</td>
+								</tr>
+								<tr>
+									<td colspan="3">Nutrition</td>
+									<td colspan="3">1700 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Exercise</td>
+									<td colspan="3">45 min., 350 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Medication</td>
+									<td colspan="3">Taken</td>
+									<td colspan="3"></td>
+								</tr>
+							</table>
+							<a href="#">
+								<i class="fa fa-trash-o text-red"></i>
+							</a>
+						</div>
+						<div class="rightBarWhiteBox">
+							<div class="whiteBoxTop">
+								<div class="dot green"></div>
+								<h4 class="date pull-left">12/22/2015</h4>
+								<a href="#" class="text-green edit">edit</a>
+							</div>
+							<table>
+								<tr>
+									<td colspan="3">Water 2</td>
+									<td colspan="3">Weight 126.2</td>
+									<td colspan="3">BP 124/84</td>
+								</tr>
+								<tr>
+									<td colspan="3">Nutrition</td>
+									<td colspan="3">1700 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Exercise</td>
+									<td colspan="3">45 min., 350 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Medication</td>
+									<td colspan="3">Taken</td>
+									<td colspan="3"></td>
+								</tr>
+							</table>
+							<a href="#">
+								<i class="fa fa-trash-o text-red"></i>
+							</a>
+						</div>
+						<div class="rightBarWhiteBox">
+							<div class="whiteBoxTop">
+								<div class="dot green"></div>
+								<h4 class="date pull-left">12/21/2015</h4>
+								<a href="#" class="text-green edit">edit</a>
+							</div>
+							<table>
+								<tr>
+									<td colspan="3">Water 2</td>
+									<td colspan="3">Weight 126.2</td>
+									<td colspan="3">BP 124/84</td>
+								</tr>
+								<tr>
+									<td colspan="3">Nutrition</td>
+									<td colspan="3">1700 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Exercise</td>
+									<td colspan="3">45 min., 350 calories</td>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td colspan="3">Medication</td>
+									<td colspan="3">Taken</td>
+									<td colspan="3"></td>
+								</tr>
+							</table>
+							<a href="#">
+								<i class="fa fa-trash-o text-red"></i>
+							</a>
+						</div>
+						<div class="text-center">
+							<a href="#" class="text-green">See More...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="jqui/external/jquery/jquery.js"></script>
+	<script src="jqui/jquery-ui.js"></script>
+	<script src="assets/custom.js"></script>
+</body>
+</html>
